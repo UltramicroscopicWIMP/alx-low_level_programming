@@ -1,0 +1,6 @@
+#include<stdio.h>
+int main()
+{ char textmsg[]='hello';
+  puts(textmsg);
+  return 0;
+}

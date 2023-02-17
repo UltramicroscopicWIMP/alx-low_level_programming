@@ -1,8 +1,8 @@
 #include<stdio.h>
 /**
  *main - puts a string of char to standard input
- *@param void: doesn't take any parameter
- *return: int. 0 on quitting
+ *
+ *Return: int. 0 on quitting
  */
 int main(void)
 {

@@ -11,3 +11,9 @@ char textmsg[] = "\"Programming is like building a multilingual puzzle";
 puts(textmsg);
 return (0);
 }
+/*                                                                                                                                          
+ *@main                                                                                                                                     
+ *returns integer on exit                                                                                                                   
+ *@param void                                                                                                                               
+ *puts a string of char to standard input                                                                                                   
+ */

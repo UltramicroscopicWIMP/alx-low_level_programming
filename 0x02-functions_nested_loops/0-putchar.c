@@ -2,7 +2,7 @@
 
 int main (void)
 {
-char* ch = "_putchar\n";
+char* ch = "_putchar";
 _putchar(ch);
 return (0);
 }

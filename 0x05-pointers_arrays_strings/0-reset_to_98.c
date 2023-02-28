@@ -2,7 +2,7 @@
 
 /**
 *reset_to_98- changes value pointed by n to 98
-*@param:int *n, a pointer to an integer
+*@n:a pointer to an integer
 *
 *Return: void. returns 0.
 */

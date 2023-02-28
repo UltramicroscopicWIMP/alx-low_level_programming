@@ -18,13 +18,13 @@ void puts_half(char *str)
 		count++;
 		c = *(str + count);
 	}
-	if (count%2 == 0)
+	if (count % 2 == 0)
 	{
-		mid = count/2;
+		mid = count / 2;
 	}
 	else
 	{
-		mid = (count + 1)/2;
+		mid = (count + 1) / 2;
 	}
 	for (i = mid; i < count; i++)
 	{

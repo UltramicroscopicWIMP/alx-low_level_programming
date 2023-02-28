@@ -1,0 +1,19 @@
+#include "main.h"
+
+/**
+*puts2 - prints every char at even index
+*@str: an array of chars
+*
+*Return: Returns nothing
+*/
+void puts2(char *str)
+{
+	char c = *str;
+
+	while (c != '\0')
+	{
+		_putchar('\0' + c);
+		c = *(str+2);
+	}
+	_putchar('\n');
+}

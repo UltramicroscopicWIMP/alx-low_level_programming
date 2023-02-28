@@ -2,7 +2,7 @@
 
 /**
 *puts_half - prints the second half of an array of chars
-@str: an array of chars
+*@str: an array of chars
 *
 *Return: Void. Returns nothing
 */

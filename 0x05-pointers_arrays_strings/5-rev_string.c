@@ -20,9 +20,9 @@ void rev_string(char *s)
 		c = *(s + count);
 	}
 
-	for ( i = count-1; i >= 0; i--)
+	for (i = count - 1; i >= 0; i--)
 	{
-		if(k <= i)
+		if (k <= i)
 		{
 			x = s[k];
 			s[k] = s[i];

@@ -6,7 +6,7 @@
 *@src: Pointer. The string from which n chars are being copied
 *@n: int. The number  of chars to be copied
 *
-*Returns: char. A pointer to the copied strings
+*Return: char. A pointer to the copied strings
 */
 char *_strncpy(char *dest, char *src, int n)
 {
@@ -17,5 +17,5 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[i] = src[i];
 		i++;
 	}
-	return (dest);
+	return(dest);
 }

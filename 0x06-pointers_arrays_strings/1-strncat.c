@@ -11,18 +11,19 @@
 char *_strncat (char *dest, char *src, int n)
 {
 	int count = 0;
+	char c = *dest;
+	char *dest_prime = dest;
 	int i = 0;
 
-	while (*dest != '\0')
+	while (c != '\0')
 	{
 		count++;
-		*dest = *(dest + count);
+		c = *(dest + count);
 	}
 	while (i < n)
 	{
-		*dest = src[i];
-		*dest = *(dest + 1);
+		dest_prime[count + i] = src[i];
 		i++;
 	}
-	return (dest);
+	return (dest_prime);
 }

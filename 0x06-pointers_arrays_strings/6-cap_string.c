@@ -8,7 +8,7 @@
 */
 char *cap_string(char *str)
 {
-	char sep[] = {' ', '\t', '\n', ',' , ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	char sep[] = {' ', '\t', '\n', ',' , ';', '.', '!', '?', '\"', '(', ')', '{', '}'};
 	char c = *str;
 	char s = sep[0];
 	int count_sep = 0;
@@ -41,3 +41,4 @@ char *cap_string(char *str)
 	}
 	return (str);
 }
+

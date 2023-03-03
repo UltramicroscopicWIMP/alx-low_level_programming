@@ -21,7 +21,7 @@ char *cap_string(char *str)
 		count++;
 		c = *(str + count);
 	}
-	while ( s != '\0')
+	while (s != '\0')
 	{
 		count_sep++;
 		s = sep[count_sep];

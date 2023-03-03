@@ -5,7 +5,7 @@
 *@dest: Pointer to the result of the concatenation
 *@src: Pointer to the string that must be concatenated with dest
 *
-*Returns: char *. A pointer to the resulting string dest
+*Return: char array. A pointer to the resulting string dest
 */
 char *_strcat(char *dest, char *src)
 {
@@ -30,5 +30,5 @@ char *_strcat(char *dest, char *src)
 		dest[i + count_d] = src[i];
 	}
 	dest[count_d + count_s] = '\0';
-	return (dest);
+	return(dest);
 }

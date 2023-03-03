@@ -6,13 +6,13 @@
 *@src: The string from which n chars are pulled from
 *@n: The number of integers to be pulled from src
 *
-*Returns: char Poiner.  A pointer to the resulting concatenation.
+*Return: char Poiner.  A pointer to the resulting concatenation.
 */
 char *_strncat (char *dest, char *src, int n)
 {
 	int count = 0;
 	char c = *dest;
-	char *dest_prime = dest;
+	char dest_prime[100];
 	int i = 0;
 
 	while (c != '\0')
@@ -25,5 +25,7 @@ char *_strncat (char *dest, char *src, int n)
 		dest_prime[count + i] = src[i];
 		i++;
 	}
-	return (dest_prime);
+	dest = dest_prime;
+	return (dest);
 }
+

@@ -9,16 +9,21 @@
 char *rot13(char *str)
 {
 	char c = *str;
+	int i = 0;
 	int count = 0;
 
 	while (c != '\0')
 	{
-		if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		{
-			str[count] = str[count] + 'N' - 'A';
-		}
 		count++;
 		c = *(str + count);
+	}
+	while (i < count)
+	{
+		if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z'))
+		{
+			str[i] = str[i] + 'N' - 'A';
+		}
+		i++;
 	}
 	return (str);
 }

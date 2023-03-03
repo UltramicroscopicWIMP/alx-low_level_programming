@@ -13,8 +13,8 @@ char *cap_string(char *str)
 	char s = sep[0];
 	int count_sep = 0;
 	int i = 0;
-	int k;
 	int count = 0;
+	int k;
 
 	while (c != '\0')
 	{
@@ -31,12 +31,8 @@ char *cap_string(char *str)
 		k = 0;
 		while (k < count_sep)
 		{
-			if (str[i] == sep[k] && (str[i + 1] >= 'a' && str[i + 1] <= 'z'))
+			if ((str[i]) == sep[k] && ((str[i + 1] >= 'a') && (str[i + 1] <= 'z')))
 			{
-				if (sep[k] == '\t')
-				{
-					str[i] = sep[0];
-				}
 				str[i + 1] = str[i + 1] + 'A' - 'a';
 			}
 			k++;

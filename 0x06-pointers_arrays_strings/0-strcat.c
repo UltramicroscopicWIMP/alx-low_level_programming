@@ -10,6 +10,7 @@
 char *_strcat(char *dest, char *src)
 {
 	char c = *dest;
+	char s = *src;
 	int count_d = 0;
 	int count_s = 0;
 	int i;
@@ -19,11 +20,10 @@ char *_strcat(char *dest, char *src)
 		count_d++;
 		c = *(dest + count_d); 
 	}
-	c = *src;
-	while (c != '\0')
+	while (s != '\0')
 	{
 		count_s++;
-		c = *(src + count_s);
+		s = *(src + count_s);
 	}
 	for (i = 0; i < count_s; i++)
 	{

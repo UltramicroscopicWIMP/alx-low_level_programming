@@ -34,6 +34,7 @@ void jack_bauer(void)
 				{
 					_putchar('0' + h_ten);
 					_putchar('0' + h_unit);
+					_putchar(':');
 					_putchar('0' + m_ten);
 					_putchar('0' + m_unit);
 					_putchar('\n');

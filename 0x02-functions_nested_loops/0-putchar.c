@@ -1,24 +1,28 @@
 #include "main.h"
 
-int main (void)
+/**
+*print_putchar - prints putchar followed by a newline
+*
+*Return: int. returns 0 on exit
+*/
+void print_putchar(void)
 {
-char ch[] = "_putchar\n";
-int i = 0;
-
-while (i < findLen(ch))
-{
-_putchar(ch[i]);
- i++;
+	char *ch = "_putchar";
+	int i = 0;
+	while (i < 8)
+	{
+		_putchar(ch[i]);
+		i++;
+	}
+	_putchar('\n');
 }
-return (0);
-}
-
-int findLen(char ch[])
+/**
+*main - calls the print_putchar function
+*
+*Return: int
+*/
+int main(void)
 {
-int len = 0;
-while (ch[len] !='\0')
-{
-len++;
-}
-return len;
+	print_putchar();
+	return (0);
 }

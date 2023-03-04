@@ -8,6 +8,7 @@
 void jack_bauer(void)
 {
 	int h_ten = 0;
+	int h_limit;
 	int h_unit;
 	int m_ten;
 	int m_unit;

@@ -11,7 +11,7 @@ void print_alphabet(void)
 
 	while (i < 26)
 	{
-		_putchar(97+i);
+		_putchar(97 + i);
 		i++;
 	}
 	 _putchar('\n');

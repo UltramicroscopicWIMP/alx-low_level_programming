@@ -11,7 +11,6 @@ void times_table(void)
 	int i;
 	int j = 0;
 	int compute;
-	char str[];
 
 	while (j < 10)
 	{
@@ -19,15 +18,14 @@ void times_table(void)
 		while (i < 10)
 		{
 			compute = i*j;
-			str = "\0" + compute;
-			printf("%s", str);
+			printf("%d", compute);
 			if (i != 9)
 			{
-				_putchar(',');
+				printf(", ");
 			}
 			i++;
 		}
-		_putchar('\n');
+		printf("\n");
 		j++;
 	}
 }

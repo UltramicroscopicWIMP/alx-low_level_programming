@@ -35,7 +35,7 @@ void print_to_98(int n)
 			tmp_next = tmp + 1;
 		}
 	}
-	if (n % 2 == 1)
+	if (n % 2 != 0)
 	{
 		printf(", %d", 98);
 	}

@@ -17,7 +17,7 @@ void times_table(void)
 		i = 0;
 		while (i < 10)
 		{
-			compute = i*j;
+			compute = i * j;
 			printf("%d", compute);
 			if (i != 9)
 			{

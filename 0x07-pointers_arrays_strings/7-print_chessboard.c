@@ -20,7 +20,6 @@ void print_chessboard(char (*a)[8])
 			_putchar(*a[j]);
 			j++;
 		}
-		_putchar('\n');
 		i++;
 		ch1 = a[i];
 	}

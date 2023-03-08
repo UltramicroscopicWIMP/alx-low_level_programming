@@ -1,4 +1,6 @@
+#include <stdlib.h>
 #include "main.h"
+#include <stddef.h>
 
 /**
 *_strstr - locates a substring
@@ -7,7 +9,7 @@
 *
 *Return: a pointer to the beginning of the located substring
 */
-char _strstr(char *haystack, char *needle)
+char *_strstr(char *haystack, char *needle)
 {
 	int i = 0;
 	int j = 0;
@@ -16,7 +18,7 @@ char _strstr(char *haystack, char *needle)
 	int count_h = 0;
 	int count_n = 0;
 	int node = 0;
-	char *ptr;
+	char *ptr = malloc(sizeof(char *));
 	char ch_h = *haystack;
 	char ch_n = *needle;
 
@@ -39,7 +41,7 @@ char _strstr(char *haystack, char *needle)
 		}
 		i++;
 	}
-	while (j < count_n)
+	while (j < count_n - 1)
 	{
 		if (needle[j] == haystack[node + j])
 		{
@@ -47,11 +49,11 @@ char _strstr(char *haystack, char *needle)
 		}
 		j++;
 	}
-	if (checker == count_n)
+	if (checker == count_n - 1)
 	{
 		while (k < count_h - node)
 		{
-			ptr[k] = haystack[node + k];
+		  *(ptr + k) = *(haystack + node + k);
 			k++;
 		}
 	}

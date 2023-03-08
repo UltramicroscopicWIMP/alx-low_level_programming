@@ -16,8 +16,8 @@ void print_diagsums(int *a, int size)
 
 	while (i < size)
 	{
-		leading_sum = leading_sum + a[i][i];
-		off_sum = off_sum + a[i][size - i - 1];
+		leading_sum = leading_sum + a[i];
+		off_sum = off_sum + a[size - i - 1];
 		i++;
 	}
 	printf("%d, %d", leading_sum, off_sum);

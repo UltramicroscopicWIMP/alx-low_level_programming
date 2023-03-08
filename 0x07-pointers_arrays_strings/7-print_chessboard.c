@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -9,20 +10,22 @@
 void print_chessboard(char (*a)[8])
 {
 	int i = 0;
+	int row = 0;
 	int j;
 	char *ch1 = a[0];
 
-	while (ch1)
+	while (*ch1 != '\0')
 	{
 		row++;
-		ch1 = a[row]
+		*ch1 = *a[row];
 	}
+	/*printf("%d %c", row, *ch1);*/
 	while (i < row)
 	{
 		j = 0;
 		while (j < 8)
 		{
-			_putchar('0' + a[i][j]);
+			_putchar(a[i][j]);
 			j++;
 		}
 		_putchar('\n');

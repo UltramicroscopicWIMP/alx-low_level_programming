@@ -10,23 +10,18 @@ void print_chessboard(char (*a)[8])
 {
 	int i = 0;
 	int j;
-	int row = 0;
 	char *ch1 = a[0];
 
 	while (*ch1 != '\0')
 	{
-		row++;
-		ch1 = a[row];
-	}
-	while (i <= row - 1)
-	{
 		j = 0;
 		while (j < 8)
 		{
-			_putchar(a[i][j]);
+			_putchar(*a[j]);
 			j++;
 		}
 		_putchar('\n');
 		i++;
+		ch1 = a[i];
 	}
 }

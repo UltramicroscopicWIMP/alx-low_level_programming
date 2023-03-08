@@ -2,7 +2,7 @@
 
 /**
 *print_chessboard - prints the chessboard
-*@a[8]: a 2D array with 8 columns
+*@a: a 2D array with 8 columns
 *
 *Return: void. Returns nothing
 */

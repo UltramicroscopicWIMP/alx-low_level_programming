@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+*main - prints the number of arguments passed into it
+*@argc: the number of cmd arguments passed in
+*@argv: an array of pointers to char. unused argument
+*
+*Return: int. exit status
+*/
+int main(int argc, __attribute__((unused)) char *argv[])
+{
+	printf("%d\n", argc - 1);
+	return (EXIT_SUCCESS);
+}

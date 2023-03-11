@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+*@argc: the number of arguments
+*@argv: an array of pointers to char
+*
+*Return: int. the exit status.
+*/
+int main(int argc, char *argv[])
+{
+	int i = 0;
+
+	while (i < argc)
+	{
+		printf("%s\n", argv[i]);
+		i++;
+	}
+	return (EXIT_SUCCESS);
+}

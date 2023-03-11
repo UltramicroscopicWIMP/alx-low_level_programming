@@ -12,9 +12,9 @@
 */
 int main(int argc, char *argv[])
 {
-        int sum = 0;
-	int i = 1;
 	int numbers;
+	int sum = 0;
+	int i = 1;
 
 	if (argc == 1)
 	{

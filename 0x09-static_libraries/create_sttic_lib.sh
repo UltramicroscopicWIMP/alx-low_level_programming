@@ -1,0 +1,1 @@
+ranlib liball.a

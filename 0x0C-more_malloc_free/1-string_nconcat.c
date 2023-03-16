@@ -1,3 +1,4 @@
+#include <string.h>
 #include "main.h"
 #include <stdlib.h>
 
@@ -12,7 +13,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *str;
-	int i = 0;
+	unsigned int i = 0;
 
 	if (n >= strlen(s2))
 	{
@@ -33,6 +34,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		{
 			str[i] = s2[i - strlen(s1)];
 		}
+		i++;
 	}
 	str[strlen(s1) + n] = '\0';
 	return (str);

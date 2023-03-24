@@ -1,4 +1,5 @@
 #include "variadic_functions.h"
+#include <string.h>
 #include <stdio.h>
 #include <stdarg.h>
 
@@ -20,7 +21,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (j = n; j > 0; j--)
 	{
 		_param = va_arg(nxt_param, char*);
-		if (_param == NULL)
+		if (_param == NULL || strlen(_param) == 0)
 		{
 			_param = "nil";
 		}

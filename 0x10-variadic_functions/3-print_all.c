@@ -34,16 +34,12 @@ void print_all(const char * const format, ...)
 				break;
 			case 's':
 				_string_param = va_arg(nxt_param, char*);
-				while (_string_param != NULL)
-				{
-					printf("%s", _string_param);
-					break;
-				}
 				if (_string_param == NULL)
 				{
-					printf("nil");
-					break;
+					_string_param = "(nil)";
 				}
+				printf("%s", _string_param);
+				break;
 		}
 		if (i != size - 1 && (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's'))
 		{

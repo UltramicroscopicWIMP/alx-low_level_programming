@@ -21,9 +21,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (j = n; j > 0; j--)
 	{
 		_param = va_arg(nxt_param, char*);
-		if (_param == NULL || strlen(_param) == 0)
+		if (_param == NULL)
 		{
-			_param = "nil";
+			_param = "(nil)";
 		}
 		printf("%s", _param);
 		if (j != 1 && separator != NULL)

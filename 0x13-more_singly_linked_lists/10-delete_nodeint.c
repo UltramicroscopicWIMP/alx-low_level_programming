@@ -38,11 +38,11 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 				*head = (*head)->next;
 				start = *head;
 			}
+			bool = 1;
 		}
 		free(rm);
 		rm = NULL;
 		*head = start;
-		bool = 1;
 	}
 	return (bool);
 }
